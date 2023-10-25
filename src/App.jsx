@@ -29,14 +29,13 @@ function App() {
 
   const searchUser = async () => {
     const octokit = new Octokit({
-      auth: "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",
+      auth: "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",
     });
     try {
       const response = await octokit.request("GET /users/{username}", {
         username: searchBar,
       });
       setResult(response.data);
-      console.log(response.data);
     } catch (error) {
       console.error(error.message);
     }
