@@ -122,22 +122,22 @@ function App() {
         </div>
 
         <section className="my-10 md:my-20">
-          <div className="flex items-center">
-            <img src={search} alt="" className="relative left-10 w-6" />
+          <div className="flex items-center relative">
+            <img src={search} alt="" className="absolute left-3 w-6" />
             <input
               type="text"
               placeholder="Search Github Username"
               className={
                 darkTheme
-                  ? "w-full p-4 rounded-xl focus:outline-none pl-12 text-white bg-[#1e2a47] placeholder:text-white"
-                  : "w-full p-4 rounded-xl focus:outline-none pl-12"
+                  ? "w-full p-4 rounded-xl focus:outline-none pl-10 text-white bg-[#1e2a47] placeholder:text-white"
+                  : "w-full p-4 rounded-xl focus:outline-none pl-10"
               }
               value={searchBar}
               onChange={(e) => setSearchBar(e.target.value)}
             />
             <button
               onClick={searchUser}
-              className="bg-[#0079ff] text-white p-3 rounded-xl relative right-[5.5rem]"
+              className="bg-[#0079ff] text-white p-3 rounded-xl absolute right-2"
             >
               Search
             </button>
